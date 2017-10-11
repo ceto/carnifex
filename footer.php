@@ -30,12 +30,12 @@
 
 		<div class="site-info">
 			<?php do_action( 'carnifex_credits' ); ?>
-			&copy; 2013 Carnifex Kft. | Minden jog fenntartva. | Készítette <a href="http://hydrogene.hu">Hydrogene</a>
+			&copy; <?= date('Y.') ?> Carnifex Kft. | Minden jog fenntartva. | Készítette <a href="http://hydrogene.hu">Hydrogene</a>
 
 			<a class="tothetop" href="#pagetop">&#9652;</a>
 		</div><!-- .site-info -->
 
-		
+
 
 	</footer><!-- #colophon .site-footer -->
 	</div>
