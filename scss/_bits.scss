@@ -1,0 +1,82 @@
+
+$half:48.93617021276595%;
+$third: 31.914893617021278%;
+$quarter:23.404255319148934%;
+
+$column:6.382978723404255%;
+$gutter:2.127659574468085%;
+
+
+
+$white_mod:#ebebeb;
+
+$gray_pp:#f9f8f7;
+$gray:#ecebe7;
+
+$black_mod:#1f1a17;
+$black_pp:#282828;
+
+$red_mm:#2c0000;
+$red:#790000;
+
+$yellow:#ea9019;
+$orange:#c64d27;
+
+$barna:rgb(126, 113, 97);
+$blue:rgb(29, 26, 46);
+
+
+$tabletBreak:920px;
+$mobileBreak:480px;
+
+$trajan:  TrajanPro, serif;
+$normal: ProximaNova-Regular, sans-serif;
+//$normal: 'Arimo', 'Open Sans', sans-serif;
+
+$icon: Entypo, EntypoSocial;
+
+
+
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+
+@mixin border-radius($borders...) {
+	-webkit-border-radius: $borders;
+	-moz-border-radius: $borders;
+	border-radius: $borders;
+}
+/*
+@mixin box-shadow($shadows...) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}*/
+
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+@mixin letterpress_dark($opacity){
+    text-shadow:black($opacity) 0 -1px 0;
+}
+
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+
+@mixin button-gradient($color-top, $color-bottom, $percent) {
+  
+background: $color-top; /* Old browsers */
+background: -moz-linear-gradient(top,  $color-top 0%, $color-bottom 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color-top), color-stop(100%,$color-bottom)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  $color-top 0%,$color-bottom 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  $color-top 0%,$color-bottom 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, $color-top 0%,$color-bottom 100%); /* IE10+ */
+background: linear-gradient(to bottom,  $color-top 0%,$color-bottom 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-top', endColorstr='$color-bottom',GradientType=0 ); /* IE6-9 */
+
+}

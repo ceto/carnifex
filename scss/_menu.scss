@@ -1,0 +1,180 @@
+
+ul.nav {
+  margin:0;
+  padding:0;
+}
+.navbar-fixed-top {
+  margin-bottom: 0 !important;
+}
+.nav > li > a {
+display: block;
+text-transform:uppercase;
+}
+
+#page > .navbar .nav > li > a {
+  padding: 15px 15px 10px;
+
+}
+
+#page > .navbar {
+  //font-size: 13px;
+}
+
+/* Change the docs' brand */
+#page > .navbar .brand {
+  display:none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top:0.5em;
+  padding-bottom:0em;
+  margin-left: 1em;
+  float: left;
+  font-weight: bold;
+  color: $white_mod;;
+  font-family:$trajan;
+  text-transform:uppercase;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+
+	@media screen and (max-width:$mobileBreak) {
+ 			display:block;
+ 			margin-left:0.5em;
+ 		}
+
+}
+
+#page > .navbar .brand:hover {
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+}
+
+
+/************ Sub Nav at theleft side ***********/
+
+.sub-navigation {
+
+
+	@media screen and (max-width:$tabletBreak) {
+		display:none;
+
+	}
+
+	h3 {
+		font-family:$normal;
+		margin:1em 2em 0.25em 2em;
+		text-align:center;
+		font-size:0.875em;
+		color:$black_mod;
+		text-transform:uppercase;
+
+
+	}
+
+	ul {
+	margin:0 2em;
+	padding:0;
+	font-family:$trajan;
+		a {
+			display:block;
+			font-family:$trajan;
+			font-weight:bold;
+			text-decoration:none;
+			text-align:center;
+			color:$black_mod;
+			font-size:0.875em;
+			line-height:1.125em;
+			padding:0.25em 0;
+
+		
+
+		
+			&:hover{
+				color:$red;
+			}
+		}
+	}
+
+}
+
+
+
+	.langsel {
+ 		margin:0;
+ 		padding:0;
+ 		list-style-type: none;
+ 		text-transform:uppercase;
+ 		font-weight:bold;
+ 		font-size:0.875em;
+ 		color:#999999;	
+ 		text-align:center;
+ 		ul {
+ 			margin:0;
+ 			padding:0;
+ 			list-style-type: none;
+  		}
+ 		li {
+ 			display:inline;
+			padding:0.25em;
+ 			
+ 		}
+	}
+
+
+
+
+
+
+
+
+/************ Footer Nav at theleft side ***********/
+
+.footer-navigation {
+
+
+	h3 {
+		font-family:$normal;
+		margin:1em 0 0;
+		//text-align:center;
+		font-size:0.875em;
+		line-height:1.125em;
+		color:$black_mod;
+	}
+
+	ul {
+	margin:0 0;
+	padding:0;
+	//font-family:$trajan;
+	li {
+		display:inline;
+	
+		&:before{
+			content:"★";
+			padding:0 0.5em 0 0.25em;
+			font-family:$icon;
+			font-size:1em;
+			line-height:0.25em;
+		}
+	}
+	a {
+			//display:block;
+			//font-family:$trajan;
+
+			text-decoration:none;
+			color:$black_mod;
+			font-size:0.875em;
+			line-height:1.125em;
+			padding:0.25em 0;
+
+		
+
+		
+			&:hover{
+				color:$red;
+			}
+		}
+	}
+
+}

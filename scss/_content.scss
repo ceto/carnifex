@@ -1,0 +1,280 @@
+/* =Content
+----------------------------------------------- */
+
+.sticky {
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+.entry-meta {
+	clear: both;
+}
+.byline {
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.entry-title {line-height:1.125em;}
+/* =Asides
+----------------------------------------------- */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+
+
+
+/* =Navigation
+----------------------------------------------- */
+
+.site-content .site-navigation {
+	line-height:1.125em;
+	margin: 0 0 0.5em;
+	overflow: hidden;
+}
+.site-content .nav-previous {
+	float: left;
+	width: 50%;
+}
+.site-content .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+#nav-below {
+margin-bottom:2em;
+}
+/* =Comments
+----------------------------------------------- */
+
+.bypostauthor {
+}
+
+.site-header {
+	padding: 0.5em 1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	@media screen and (max-width:$tabletBreak){
+		float:left;
+		width:50%;
+		padding: 0.25em 1em;
+	}
+
+
+}
+
+.site-title {
+	margin-top:0.75em;
+	margin-bottom:0;
+	//padding:0.75em 1em;
+	
+	text-align:center;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+
+	@media screen and (max-width:$tabletBreak){
+		width:50%;
+		float:left;
+		margin:0;
+
+	}
+}
+
+.logo { 
+	cursor: pointer; 
+}
+.logo img { 
+	display: block;
+	margin:0 auto;
+
+	width:180px !important;
+
+
+	
+
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-o-transition: -o-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	transition: transform 1s;
+
+
+
+	@media screen and (max-width:$tabletBreak){
+		margin: 0;
+		width:110px !important;
+		//float:left;
+
+	}
+}
+
+.logo:hover img {
+	-webkit-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-o-transition: -o-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	transition: transform 1s;
+}
+
+
+.thelogo {
+
+	@media screen and (max-width:$tabletBreak){
+	//	width:120px !important;
+		//float:left;
+	}
+
+
+	@media screen and (max-width:$mobileBreak){
+	//	width:90px !important;
+	}
+
+}
+
+.site-description {
+
+	font-weight:normal;
+	line-height:1.125em;
+	margin-top:2em;
+	padding: 3em auto;
+	text-align:center;
+	color:$red_mm;
+	font-family:$normal;
+	//font-style:italic;
+	//font-weight:bold;
+	font-size:0.75em;
+	text-transform:uppercase;
+
+		-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	@media screen and (max-width:$tabletBreak) {
+		//display:none;
+		float:right;
+		width:50%;
+		margin:0;
+
+		padding:1.25em 0 0 1em;
+		text-align:left;
+	}
+	@media screen and (max-width:$mobileBreak) {
+		padding-top:0;
+		display:none;
+
+	}
+
+
+}
+.info {
+	padding:0.5em 1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align:center;
+	//position:absolute;
+	//left:0;right:0;
+	@media screen and (max-width:$tabletBreak) {
+		width:50%;
+		float:right;
+		padding-top:1.25em;
+
+	}
+
+	@media screen and (max-width:$mobileBreak) {
+		padding-top:0.5em;
+
+	}
+
+
+}
+.langsel {
+	//float:left;
+	//width:50%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-size:0.875em;
+
+
+	@media screen and (max-width:$tabletBreak) {
+		width:100%;
+		float:none;
+		text-align:right;
+		margin-bottom:0.5em;
+	}
+
+
+
+}
+.callmenow {
+	//width:50%;
+	//float:right;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	font-weight:bold;
+	//color:$gray;
+	//padding-right:1em;
+	font-size:0.875em;
+	line-height:1em;
+
+	@media screen and (max-width:$tabletBreak) {
+		width:100%;
+		float:none;
+		text-align:right;
+	}
+
+}
+
+
+a.tothetop{
+	display:block;
+	font-family:$icon;
+	font-size:4em;
+	text-decoration:none;
+	text-align:center;
+	position:absolute;
+	right:0.25em;
+	top:-40px;
+	width:40px;
+	height:30px;
+	padding-top:10px;
+	line-height:0.125em;
+	background:$black_pp;
+	color:$white_mod;
+	&:hover {
+		background:$red_mm;
+
+	}
+
+
+}
+

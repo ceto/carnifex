@@ -1,0 +1,51 @@
+body {
+	color:$black_mod;
+	font-family:$normal;
+}
+
+
+/* Links */
+a {
+	color: $red;
+}
+a:visited {
+	color: $red;
+}
+a:hover,
+a:focus,
+a:active {
+	color: $orange;
+}
+
+.entry-title a {
+	color: $red;	
+	text-decoration:none;
+}
+
+h1,h2,h3 {
+	font-family:$trajan;
+	color:$red;
+
+}
+
+a.btn {
+	display:inline-block;
+	color:$white_mod;
+	background:$orange;
+	font-family:$normal;
+	font-weight:bold;
+	text-align:center;
+	padding:0.5em 1em;
+	text-transform:uppercase;
+	text-decoration:none;
+	line-height:1.125em;
+	@include letterpress_dark(0.4);
+
+	&:hover {
+		color:$white_mod;
+		background:$red;
+
+	}
+
+}
+
