@@ -63,10 +63,11 @@ text-transform:uppercase;
 	}
 
 	h3 {
+
 		font-family:$normal;
-		margin:1em 2em 0.25em 2em;
+		margin:1em 2em .5em 2em;
 		text-align:center;
-		font-size:0.875em;
+		font-size:0.75em;
 		color:$black_mod;
 		text-transform:uppercase;
 
@@ -86,11 +87,11 @@ text-transform:uppercase;
 			color:$black_mod;
 			font-size:0.875em;
 			line-height:1.125em;
-			padding:0.25em 0;
+			padding:.5em 0;
 
-		
 
-		
+
+
 			&:hover{
 				color:$red;
 			}
@@ -102,13 +103,15 @@ text-transform:uppercase;
 
 
 	.langsel {
- 		margin:0;
+ 		margin:1em 0 1em;
  		padding:0;
  		list-style-type: none;
- 		text-transform:uppercase;
- 		font-weight:bold;
+ 		//text-transform:capitalize;
+        //font-variant: small-caps;
+        font-family: $trajan;
+ 		font-weight:normal;
  		font-size:0.875em;
- 		color:#999999;	
+ 		//color:#999999;
  		text-align:center;
  		ul {
  			margin:0;
@@ -117,8 +120,23 @@ text-transform:uppercase;
   		}
  		li {
  			display:inline;
-			padding:0.25em;
- 			
+			padding:0;
+            &:not(:last-child) {
+                &:after {
+                    content: '|';
+                }
+            }
+            &.wpml-ls-current-language {
+                color:$red;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+                &:hover,&:focus {
+                    color:$orange;
+                }
+            }
+
  		}
 	}
 
@@ -149,7 +167,7 @@ text-transform:uppercase;
 	//font-family:$trajan;
 	li {
 		display:inline;
-	
+
 		&:before{
 			content:"★";
 			padding:0 0.5em 0 0.25em;
@@ -168,9 +186,9 @@ text-transform:uppercase;
 			line-height:1.125em;
 			padding:0.25em 0;
 
-		
 
-		
+
+
 			&:hover{
 				color:$red;
 			}

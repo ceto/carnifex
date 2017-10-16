@@ -1,5 +1,5 @@
 .product-list {
-	
+
 	.product {
 		padding:1em;
 
@@ -7,8 +7,8 @@
 
 
 		background: url(images/square.jpg) repeat left top gray;
-		
-		@include box-shadow(-3px -3px 5px -3px $gray);
+
+		box-shadow: -3px -3px 5px -3px $gray;
 
 		border:1px solid $gray_pp;
 
@@ -20,9 +20,9 @@
 		// 		clear:left;
 		// 		margin-left:0;
 		// }
-		
+
 		@media screen and (max-width:$mobileBreak) {
-			margin:0 -1em 2em -1em; 
+			margin:0 -1em 2em -1em;
 		}
 
 
@@ -53,7 +53,7 @@
 		}
 		@media screen and (max-width:$mobileBreak) {
 			font-size:1.25em;
-			
+
 		}
 
 
@@ -114,7 +114,7 @@
 				text-align:center;
 		}
 
-		
+
 	}
 	.product-button {
 		//width:$third;
@@ -154,7 +154,7 @@
 
 
 
-	
+
 }
 
 
@@ -174,7 +174,7 @@
 	}
 
 	.product-header {
-		
+
 	}
 
 	.product-title {
@@ -205,7 +205,7 @@
  		width:$half;
  		float:left;
  		margin-bottom:0.5em;
- 
+
  		margin-right:$gutter;
  		@media screen and (max-width:$mobileBreak) {
 				float:none;
@@ -241,7 +241,7 @@
 		@media screen and (max-width:$tabletBreak) {
 			text-align:center;
 		}
-	
+
 
 		.btn {
 		//display:block;
@@ -266,14 +266,14 @@
 		}
 		}
 
-	
+
 	}
 
 	.more-pics {
 		//clear:both;
 		margin:0.25em 0 0.5em 0;
 
-		
+
 		.gallery {
 			//float:right;
 			padding:0;
@@ -298,13 +298,13 @@
 
 	.product-snippets {
 		clear:both;
-		
-		
+
+
 		.snip {
 
 			background: url(images/square.jpg) repeat left top gray;
-		
-			@include box-shadow(-3px -3px 5px -3px $gray);
+
+			box-shadow: -3px -3px 5px -3px $gray;
 
 			border:1px solid $gray_pp;
 			padding:0 1em 1em 1em;
@@ -313,11 +313,11 @@
 			@media screen and (max-width:$mobileBreak) {
 				//margin:0 -1em 1em -1em;
 			}
-	
+
 		}
 
 
-	
+
 
 		h3 {
 			margin-bottom:0.5em;
@@ -342,30 +342,24 @@
 						speak: none;
 						font-style: normal;
 						font-weight: normal;
-        				//line-height: 1;
         				-webkit-font-smoothing: antialiased;
         				position:absolute;
         				left:-0.75em;
-        				//top:0.125em;
-						//float:left;
-						//margin-left:-0.5em;
-						//padding-top:0.5em;
-						//margin-right:0.125em;
 						font-family: $icon;
 						color:$red;
 						font-size:2em;
 						line-height:0.125em;
-						
 
-					}	
-				
+
+					}
+
 				}
 			}
-		
+
 
 
 	}
-		
+
 
 }
 
@@ -376,8 +370,7 @@
 
 .tags-links {
 	display:block;
-	//line-height:1.5em;
-	//margin:2em 0 0.5em 0;
+
 
 	a{
 		display:block;
@@ -397,15 +390,7 @@
 		 	background: $red_mm;
 		}
 	}
-	
-	// .sep {
-	// 		font-family:$icon;
-	// 		color:$red;
-	// 		font-size:2em;
-	// 		line-height:0.5em;			
-	// }
 
 
-	
 
 }

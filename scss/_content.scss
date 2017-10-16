@@ -83,7 +83,7 @@ margin-bottom:2em;
 	margin-top:0.75em;
 	margin-bottom:0;
 	//padding:0.75em 1em;
-	
+
 	text-align:center;
 
 	-moz-box-sizing: border-box;
@@ -99,17 +99,17 @@ margin-bottom:2em;
 	}
 }
 
-.logo { 
-	cursor: pointer; 
+.logo {
+	cursor: pointer;
 }
-.logo img { 
+.logo img {
 	display: block;
 	margin:0 auto;
 
 	width:180px !important;
 
 
-	
+
 
 	-webkit-transition: -webkit-transform 1s;
 	-moz-transition: -moz-transform 1s;
@@ -213,43 +213,36 @@ margin-bottom:2em;
 
 }
 .langsel {
-	//float:left;
-	//width:50%;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-
 	font-size:0.875em;
-
 
 	@media screen and (max-width:$tabletBreak) {
 		width:100%;
 		float:none;
 		text-align:right;
 		margin-bottom:0.5em;
+		margin-top: .5em;
 	}
 
 
 
 }
 .callmenow {
-	//width:50%;
-	//float:right;
-
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	
-	font-weight:bold;
-	//color:$gray;
-	//padding-right:1em;
-	font-size:0.875em;
+	font-weight:normal;
+	font-size:0.75em;
 	line-height:1em;
+	margin-bottom: 2vh;
+	a {
+		text-decoration: none;
+		color:$orange;
+	}
 
 	@media screen and (max-width:$tabletBreak) {
 		width:100%;
 		float:none;
 		text-align:right;
+		margin-bottom: 0;
 	}
 
 }

@@ -21,16 +21,16 @@ get_header(); ?>
 				</div>
 
 				<div class="kiemel clearfix">
-					<h1><span>Készresütött gyroshúsok gyártása és forgalmazása</span></h1>
-					<p>Célunk a gyorséttermek, büfék, pizzériák, vendéglátó helyek részére készresütött (fogyasztásra kész) csirkemell, csirkecomb, pulykacomb gyroshús, illetve fűzött (nyársas) csirkemell,  csirkecomb gyroshús előállítása.</p>
-					<a href="?page_id=4" class="btn">Termékek megtekintése</a>
+					<h1><span><?= __('Készresütött gyroshúsok gyártása és forgalmazása','carnifex'); ?></span></h1>
+					<p><?= __('Célunk a gyorséttermek, büfék, pizzériák, vendéglátó helyek részére készresütött (fogyasztásra kész) csirkemell, csirkecomb, pulykacomb gyroshús, illetve fűzött (nyársas) csirkemell,  csirkecomb gyroshús előállítása.','carnifex'); ?></p>
+					<a href="?page_id=4" class="btn"><?= __('Termékek megtekintése','carnifex'); ?></a>
 				</div>
 
-				<?php 
+				<?php
 					$args = array (
 						'nopaging' => false,
 						'post_type' => 'product',
-						
+
 						//'meta_key' => '_cmb_type',
 						// 'meta_query' => array(
 						// 					array(
@@ -43,9 +43,9 @@ get_header(); ?>
 					);
 					$the_products = new WP_Query($args);
 				?>
-				
+
 				<div class="homelist clearfix">
-					
+
 					<?php while ( $the_products->have_posts() ) : $the_products->the_post(); ?>
 						<div class="proditem">
 						<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'carnifex' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
@@ -61,10 +61,10 @@ get_header(); ?>
 					</div>
 					<?php endwhile; // end of the loop. ?>
 					<?php wp_reset_query();	wp_reset_postdata();?>
-	
+
 				</div>
 
-			
+
 
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>

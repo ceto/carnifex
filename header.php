@@ -21,20 +21,16 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="icon" type="image/png" href="<?php bloginfo( 'template_directory' ); ?>/images/favicon.png" />
 <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/style.css">
-<!-- link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' -->
-
 <script src="<?php bloginfo( 'template_directory' ); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 <?php if ( is_page_template('tmpl_contact.php') ) : ?>
- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcWm6oWWQO581TRnKiWzmDWLdl1_JLQ04"></script>
  <script type="text/javascript">
 			  var map;
 			  function initialize() {
 			    var latlng = new google.maps.LatLng(47.99826640666682, 21.87454640865326);
 				var centerlatlng = new google.maps.LatLng(47.99826640666682, 21.87454640865326);
 				var myOptions = {
-				  zoom: 10,
+				  zoom: 11,
 				  center: centerlatlng,
 				  disableDefaultUI: true,
 				  mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -53,18 +49,18 @@
 				]
 				};
 				var map = new google.maps.Map(document.getElementById('map_canvas'),	myOptions);
-				
+
 				var image = new google.maps.MarkerImage('<?php bloginfo( 'template_directory' ); ?>/images/flag.png',
 				new google.maps.Size(140, 79), new google.maps.Point(0,0), new google.maps.Point(70, 69));
 				var shadow = new google.maps.MarkerImage('<?php bloginfo( 'template_directory' ); ?>/images/flag_shadow.png',
 				new google.maps.Size(140, 79), new google.maps.Point(0,0), new google.maps.Point(70, 69));
-				
+
 				var marker = new google.maps.Marker({
-				  position: latlng, 
-				  map: map, 
+				  position: latlng,
+				  map: map,
 				  title:"Carnifex Kft.",
 				  icon:image,
-				  shadow:shadow 
+				  shadow:shadow
 				});
 				 }
 
@@ -86,7 +82,7 @@
 
 </script>
 </head>
-       
+
 <body <?php body_class(); ?>>
 	 <a name="pagetop"></a>
 	        <!--[if lt IE 7]>
@@ -130,23 +126,23 @@
 
 
 
-				<div class="info">
+		<div class="info">
 			<div class="langsel">
-				<?php // do_action('icl_language_selector'); ?>
+				<?php do_action('icl_language_selector'); ?>
    			</div>
 			<div class="callmenow">
-				+36 20 515-5257
+				<a href="tel:+36205155257">+36 20 515-5257</a>
 			</div>
 		</div>
 
 		<nav role="navigation" class="site-navigation sub-navigation">
-			<h3><?php _e( 'Gyroshúsok', 'carnifex' ); ?></h3>
+			<h3><?php _e( 'Termékek', 'carnifex' ); ?></h3>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'carnifex' ); ?>"><?php _e( 'Skip to content', 'carnifex' ); ?></a></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
 		</nav><!-- .site-navigation .sub-navigation -->
 
 		<div class="leftsidebar">
-			
+
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php dynamic_sidebar( 'sidebar-left' ); ?>
 

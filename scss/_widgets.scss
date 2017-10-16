@@ -30,7 +30,7 @@
 		width:auto;
 		position:static;
 		display:none;
-		
+
 	}
 
 	@media screen and (max-width:$mobileBreak) {
@@ -92,11 +92,9 @@
 	margin:1em -2em 1em -2em;
 	padding:1em 2em 1.5em 2em;
 	background: url(images/square.jpg) repeat left top $white_mod;
-	//font-style:italic;
 	font-weight:bold;
 	border-top:1px solid $gray_pp;
 	border-bottom:1px solid $gray_pp;
-	//@include box-shadow(5px 0px 15px -5px $gray);
 	font-family:$trajan;
 	color:$red;
 	//font-size:1.5em;
@@ -111,7 +109,7 @@
 
 	.btn {
 		text-align:right;
-		float:right;		
+		float:right;
 	}
 
 
@@ -126,18 +124,8 @@
 
 }
 .homelist {
-	// width:4*$column+3*$gutter;
-	// float:left;
-
-	// @media screen and (max-width:$mobileBreak) {
-	// 	float:none;
-	// 	width:100%;
-		
-	// }
 
 	.proditem{
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		float:left;
 		width:18.2%;
@@ -155,10 +143,10 @@
 				margin-right:0;
 			}
 			&:nth-child(2n+1) {
-				
+
 				clear:left;
 			}
-		
+
 	}
 
 
@@ -197,30 +185,6 @@
 
 .single-product .entry-content,  .home .entry-content {
 
-	// width:8*$column+7*$gutter;
-	// float:left;
-	// margin-left:$gutter;
-
-	// @media screen and (max-width:$mobileBreak) {
-	// 	float:none;
-	// 	width:100%;
-	// 	margin-left:0;
-
-	// }
-
-	// .half {
-	// 	width:$half;
-	// 	float:left;
-	// 	@media screen and (max-width:$mobileBreak) {
-	// 		width:auto;
-	// 		float:none;
-	// 		margin-left:0 !important;
-	// 	}
-
-	// }
-	// .half.last {
-	// 	margin-left:$gutter;
-	// }
 	h2 {
 		margin: 0 0 0 $third+$gutter;
 		@media screen and (max-width:$mobileBreak) {
@@ -269,7 +233,7 @@
 		margin-top:1.75em;
 		float:left;
 		width:2*$third +$gutter;
-		
+
 		&:after{
 			font-family:$icon;
 			content:"★";
@@ -318,11 +282,11 @@
 	float:left;
 	background:url(images/biga.png) repeat left top $white_mod;
 	margin-top:2em;
-	@include box-sizing(border-box);
+	box-sizing: border-box;
 	padding:0 1em;
 
 	border:1px solid white;
-	@include box-shadow(0 0 15px -5px $red_mm);
+	box-shadow: 0 0 15px -5px $red_mm;
 
 	@media screen and (max-width:$mobileBreak) {
 		width:auto;
@@ -349,13 +313,13 @@
 .wpcf7 {
 	p {
 		margin-top:0;
-		
+
 	}
 	label {
 		display:block;
 		float:left;
 		width:25%;
-		@include box-sizing(border-box);
+		box-sizing: border-box;
 		padding:0.5em 0.5em 0.5em 0;
 		background-color:$red;
 		border:1px solid white;
@@ -393,15 +357,15 @@
 	input[type="text"], textarea {
 		width:100%;
 		display:block;
-		@include box-sizing(border-box);
+		box-sizing: border-box;
 		border:1px solid white;
 		border-left:0;
 		padding:0.5em;
 		line-height: 1.125em;
 		background:url(images/biga.png) repeat left top $white_mod;
 		//color:$red;
-		@include box-shadow(inset 0px 0px 15px -5px $red_mm);
-		
+		box-shadow: inset 0px 0px 15px -5px $red_mm;
+
 		&:focus {
 			outline:1px dotted $red;
 		}
@@ -417,11 +381,8 @@
 
 
 	input[type="submit"] {
-//		display: block;
-//		clear:right;
-		//width:33.333%;
+
 		float:right;
-		//margin-right:-1em;
 		border:0;
 		color:$white_mod;
 	background:$orange;
@@ -441,7 +402,7 @@
 	}
 
 	}
-	
+
 
 
 	img.ajax-loader {
