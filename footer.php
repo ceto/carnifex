@@ -30,7 +30,7 @@
 
 		<div class="site-info">
 			<?php do_action( 'carnifex_credits' ); ?>
-			&copy; <?= date(Y.) ?> <?= __('Carnifex Kft. | Minden jog fenntartva. | Készítette <a href="http://hydrogene.hu">Hydrogene</a>','carnifex'); ?>
+			&copy; <?= date('Y.') ?> <?= __('Carnifex Kft. | Minden jog fenntartva. | Készítette <a href="http://hydrogene.hu">Hydrogene</a>','carnifex'); ?>
 
 			<a class="tothetop" href="#pagetop">&#9652;</a>
 		</div><!-- .site-info -->
