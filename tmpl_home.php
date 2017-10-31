@@ -49,9 +49,10 @@ get_header(); ?>
 					<?php while ( $the_products->have_posts() ) : $the_products->the_post(); ?>
 						<div class="proditem">
 						<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'carnifex' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
-							<?php if ( has_post_thumbnail() ) {the_post_thumbnail('product-medium');} else { ?>
-								<img src="http://lorempixel.com/270/270">
-							<?php } ?>
+							<?php // Media
+									$origid = apply_filters( 'wpml_object_id', get_the_ID(), 'product', FALSE, 'hu' );
+									echo get_the_post_thumbnail( $origid, 'product-medium' );
+								?>
 						</a>
 						<h3>
 						<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'carnifex' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">

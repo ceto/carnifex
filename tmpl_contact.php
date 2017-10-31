@@ -26,10 +26,11 @@ get_header(); ?>
 					<?php endwhile; // end of the loop. ?>
 				</div>
 				<div class="sendmessage">
-					<?php echo do_shortcode('[contact-form-7 id="73" title="Contact Form - HU"]'); ?>
+					<?php //echo do_shortcode('[contact-form-7 id="73" title="Contact Form - HU"]'); ?>
+					<?php echo do_shortcode(get_post_meta(get_the_ID(),'cfshortcode',true)); ?>
 				</div>
-				
-				
+
+
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->

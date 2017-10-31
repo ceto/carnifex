@@ -48,7 +48,12 @@ get_header(); ?>
 
 							<a href="#" rel="blightbox['<?php echo $id; ?>']">
 
-								<?php if ( has_post_thumbnail() ) {the_post_thumbnail('product-normal'); } ?>
+
+								<?php // Media
+									$origid = apply_filters( 'wpml_object_id', get_the_ID(), 'product', FALSE, 'hu' );
+									echo get_the_post_thumbnail( $origid, 'product-normal' );
+								?>
+								<?php //if ( has_post_thumbnail() ) {the_post_thumbnail('product-normal'); } ?>
 
 							</a>
 

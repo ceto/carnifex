@@ -49,9 +49,10 @@ get_header(); ?>
 						</header><!-- .product-header -->
 						<figure class="product-photo thumb">
 							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'carnifex' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
-								<?php if ( has_post_thumbnail() ) {the_post_thumbnail('product-normal');} else { ?>
-								<img src="http://lorempixel.com/470/470">
-							<?php } ?>
+								<?php // Media
+									$origid = apply_filters( 'wpml_object_id', get_the_ID(), 'product', FALSE, 'hu' );
+									echo get_the_post_thumbnail( $origid, 'product-normal' );
+								?>
 							</a>
 						</figure>
 						<footer class="product-meta">
