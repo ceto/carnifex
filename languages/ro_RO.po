@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Carnifex\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-16 11:38+0000\n"
-"PO-Revision-Date: 2017-10-16 11:38+0000\n"
+"PO-Revision-Date: 2017-11-22 16:37+0000\n"
 "Last-Translator: ceto <szabogabi@gmail.com>\n"
 "Language-Team: Romanian\n"
 "Language: ro-RO\n"
@@ -316,7 +316,7 @@ msgstr ""
 
 #: tmpl_home.php:24
 msgid "Készresütött gyroshúsok gyártása és forgalmazása"
-msgstr ""
+msgstr "Producție și distribuție de carne de gyros gata prăjită și pe proțap"
 
 #: tmpl_home.php:25
 msgid ""
@@ -324,6 +324,10 @@ msgid ""
 "készresütött (fogyasztásra kész) csirkemell, csirkecomb, pulykacomb gyroshús,"
 " illetve fűzött (nyársas) csirkemell,  csirkecomb gyroshús előállítása."
 msgstr ""
+"Scopul nostru este de a produce carne de gyros gata prăjită (gata de consum),"
+" din piept de pui, pulpă de pui, pulpă de curcan, respectiv kebab din piept "
+"de pui și pulpă de pui (pe proţap), pentru fast-fooduri, bufete, pizzerii, "
+"restaurante."
 
 #: tmpl_home.php:26
 msgid "Termékek megtekintése"
@@ -335,11 +339,11 @@ msgstr ""
 
 #: tmpl_product_list.php:19
 msgid "Carnifex gyroshúsok"
-msgstr ""
+msgstr "Tipuri de carne gyros Carnifex"
 
 #: tmpl_product_list.php:89
 msgid "A termék részletei"
-msgstr ""
+msgstr "Detalii produs"
 
 #: inc/extras.php:75
 #, php-format
