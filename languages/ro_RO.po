@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Carnifex\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-16 11:38+0000\n"
-"PO-Revision-Date: 2017-11-22 16:37+0000\n"
+"PO-Revision-Date: 2017-11-22 16:44+0000\n"
 "Last-Translator: ceto <szabogabi@gmail.com>\n"
 "Language-Team: Romanian\n"
 "Language: ro-RO\n"
@@ -199,7 +199,7 @@ msgstr ""
 
 #: header.php:143
 msgid "Gyroshúsok"
-msgstr ""
+msgstr "Tipuri de carne gyros"
 
 #: image.php:24
 #, php-format
@@ -293,18 +293,20 @@ msgid ""
 "Árainkról érdeklődjön<br />telefonon: +36/20 515-5257<br>vagy űrlapunkon "
 "keresztül"
 msgstr ""
+"Informații despre prețurile noastre<br>prin telefon: +36/20 515-5257<br>sau "
+"prin formular"
 
 #: single-product.php:78
 msgid "Összetevők"
-msgstr ""
+msgstr "Ingrediente"
 
 #: single-product.php:83
 msgid "Kiszerelés, csomagolás"
-msgstr ""
+msgstr "Prezentare, ambalare"
 
 #: single-product.php:87
 msgid "Felhasználás, tárolás"
-msgstr ""
+msgstr "Utilizare, depozitare"
 
 #. Name of the template
 msgid "Contact"
@@ -314,21 +316,6 @@ msgstr ""
 msgid "Homepage"
 msgstr ""
 
-#: tmpl_home.php:24
-msgid "Készresütött gyroshúsok gyártása és forgalmazása"
-msgstr "Producție și distribuție de carne de gyros gata prăjită și pe proțap"
-
-#: tmpl_home.php:25
-msgid ""
-"Célunk a gyorséttermek, büfék, pizzériák, vendéglátó helyek részére "
-"készresütött (fogyasztásra kész) csirkemell, csirkecomb, pulykacomb gyroshús,"
-" illetve fűzött (nyársas) csirkemell,  csirkecomb gyroshús előállítása."
-msgstr ""
-"Scopul nostru este de a produce carne de gyros gata prăjită (gata de consum),"
-" din piept de pui, pulpă de pui, pulpă de curcan, respectiv kebab din piept "
-"de pui și pulpă de pui (pe proţap), pentru fast-fooduri, bufete, pizzerii, "
-"restaurante."
-
 #: tmpl_home.php:26
 msgid "Termékek megtekintése"
 msgstr ""
@@ -336,14 +323,6 @@ msgstr ""
 #. Name of the template
 msgid "Product List"
 msgstr ""
-
-#: tmpl_product_list.php:19
-msgid "Carnifex gyroshúsok"
-msgstr "Tipuri de carne gyros Carnifex"
-
-#: tmpl_product_list.php:89
-msgid "A termék részletei"
-msgstr "Detalii produs"
 
 #: inc/extras.php:75
 #, php-format
@@ -428,3 +407,26 @@ msgstr ""
 #. Author URI of the theme
 msgid "http://www.hydrogene.hu"
 msgstr ""
+
+#: tmpl_home.php:24
+msgid "Készresütött gyroshúsok gyártása és forgalmazása"
+msgstr "Producție și distribuție de carne de gyros gata prăjită și pe proțap"
+
+#: tmpl_home.php:25
+msgid ""
+"Célunk a gyorséttermek, büfék, pizzériák, vendéglátó helyek részére "
+"készresütött (fogyasztásra kész) csirkemell, csirkecomb, pulykacomb gyroshús,"
+" illetve fűzött (nyársas) csirkemell,  csirkecomb gyroshús előállítása."
+msgstr ""
+"Scopul nostru este de a produce carne de gyros gata prăjită (gata de consum),"
+" din piept de pui, pulpă de pui, pulpă de curcan, respectiv kebab din piept "
+"de pui și pulpă de pui (pe proţap), pentru fast-fooduri, bufete, pizzerii, "
+"restaurante."
+
+#: tmpl_product_list.php:19
+msgid "Carnifex gyroshúsok"
+msgstr "Tipuri de carne gyros Carnifex"
+
+#: tmpl_product_list.php:89
+msgid "A termék részletei"
+msgstr "Detalii produs"
