@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Carnifex\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-16 11:38+0000\n"
-"PO-Revision-Date: 2017-11-22 16:44+0000\n"
+"POT-Creation-Date: 2017-11-22 17:02+0000\n"
+"PO-Revision-Date: 2017-11-22 17:04+0000\n"
 "Last-Translator: ceto <szabogabi@gmail.com>\n"
 "Language-Team: Romanian\n"
 "Language: ro-RO\n"
@@ -171,7 +171,7 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: footer.php:24 footer.php:24 header.php:144 header.php:144
+#: footer.php:24 footer.php:24 header.php:140 header.php:140
 msgid "Skip to content"
 msgstr ""
 
@@ -197,9 +197,9 @@ msgstr ""
 msgid "Left Sidebar"
 msgstr ""
 
-#: header.php:143
-msgid "Gyroshúsok"
-msgstr "Tipuri de carne gyros"
+#: header.php:139
+msgid "Termékek"
+msgstr "Produse"
 
 #: image.php:24
 #, php-format
@@ -288,26 +288,6 @@ msgstr ""
 msgid "%1$s"
 msgstr ""
 
-#: single-product.php:70
-msgid ""
-"Árainkról érdeklődjön<br />telefonon: +36/20 515-5257<br>vagy űrlapunkon "
-"keresztül"
-msgstr ""
-"Informații despre prețurile noastre<br>prin telefon: +36/20 515-5257<br>sau "
-"prin formular"
-
-#: single-product.php:78
-msgid "Összetevők"
-msgstr "Ingrediente"
-
-#: single-product.php:83
-msgid "Kiszerelés, csomagolás"
-msgstr "Prezentare, ambalare"
-
-#: single-product.php:87
-msgid "Felhasználás, tárolás"
-msgstr "Utilizare, depozitare"
-
 #. Name of the template
 msgid "Contact"
 msgstr ""
@@ -318,7 +298,7 @@ msgstr ""
 
 #: tmpl_home.php:26
 msgid "Termékek megtekintése"
-msgstr ""
+msgstr "Arată produse"
 
 #. Name of the template
 msgid "Product List"
@@ -401,12 +381,32 @@ msgid "http://hydrogene.hu/"
 msgstr ""
 
 #. Author of the theme
-msgid "Gábor Szabó"
+msgid "Gabor Szabo"
 msgstr ""
 
 #. Author URI of the theme
 msgid "http://www.hydrogene.hu"
 msgstr ""
+
+#: single-product.php:70
+msgid ""
+"Árainkról érdeklődjön<br />telefonon: +36/20 515-5257<br>vagy űrlapunkon "
+"keresztül"
+msgstr ""
+"Informații despre prețurile noastre<br>prin telefon: +36/20 515-5257<br>sau "
+"prin formular"
+
+#: single-product.php:78
+msgid "Összetevők"
+msgstr "Ingrediente"
+
+#: single-product.php:83
+msgid "Kiszerelés, csomagolás"
+msgstr "Prezentare, ambalare"
+
+#: single-product.php:87
+msgid "Felhasználás, tárolás"
+msgstr "Utilizare, depozitare"
 
 #: tmpl_home.php:24
 msgid "Készresütött gyroshúsok gyártása és forgalmazása"
